@@ -1,3 +1,4 @@
+# ===== YOUR EXISTING 10 PACKAGES =====
 Flask==0.12.2
 requests==2.18.0
 urllib3==1.21.1
@@ -8,3 +9,32 @@ aiohttp==2.3.0
 certifi==2017.7.27.1
 mistune==0.8.3
 Pillow==5.0.0
+
+# ===== NEW VULNERABLE PACKAGES (Should show HIGH risk) =====
+django==2.2.0           # Old Django - many CVEs
+scipy==1.2.0            # Old SciPy - has vulnerabilities
+tensorflow==1.15.0      # Old TensorFlow - multiple CVEs
+pandas==0.24.0          # Old pandas - known issues
+scikit-learn==0.20.0    # Old sklearn - has vulnerabilities
+paramiko==2.4.0         # Old SSH library - multiple CVEs
+jinja2==2.10.0          # Old Jinja2 - template injection CVEs
+sqlalchemy==1.2.0       # Old SQLAlchemy - security issues
+pyyaml==5.1.0           # Old PyYAML - arbitrary code execution
+celery==4.3.0           # Old Celery - multiple CVEs
+redis==3.2.0            # Old Redis client - has vulnerabilities
+pymongo==3.8.0          # Old MongoDB driver - known issues
+matplotlib==3.0.0       # Old matplotlib - vulnerabilities
+opencv-python==4.1.0    # Old OpenCV - multiple CVEs
+twisted==18.9.0         # Old Twisted - many CVEs
+fabric==2.5.0           # Old Fabric - security issues
+
+# ===== NEW SAFE PACKAGES (Should show LOW risk) =====
+requests==2.32.3        # Latest safe version! Should show low risk
+urllib3==2.2.2          # Latest safe version!
+cryptography==42.0.8    # Latest safe version!
+pyjwt==2.8.0            # Latest safe version!
+flask==3.0.3            # Latest safe version!
+click==8.1.7            # Latest stable - very secure
+colorama==0.4.6         # Simple package - no known CVEs
+tqdm==4.66.4            # Progress bar - very secure
+python-dotenv==1.0.0    # Environment vars - no CVEs
